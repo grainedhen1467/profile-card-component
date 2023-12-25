@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --name-and-stats: font-size: 1.125rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main__flexContainer {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-cyan);
+    background-image: url("images/bg-pattern-bottom.svg"),
+    url("images/bg-pattern-top.svg");
+    background-position: bottom 200% left 154%, top 155% right 170%;
+    background-repeat: no-repeat;
+}
+
+.main__flexContainer {
+    background-color: var(--dark-cyan);
+    background-image: url("images/bg-pattern-bottom.svg"),
+    url("images/bg-pattern-top.svg");
+    background-position: left -25% top -80%, right -30% top 190%;
+    background-repeat: no-repeat;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 21.875rem;
+    height: 23.375rem;
+    border-radius: 0.9375rem;
+    box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.50);
+    background: #FFF;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 23.4375rem) {
+    .card {
+        width: 20.375rem;
+        height: 23.375rem;
+    }
+    
+}
+
+.card__imageFlexContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__background-image {
+    width: 100%;
+}
+
+.card__portrait {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    align-self: center;
+    background-color: #fff;
+
+    /* move image over background */
+    margin-top: -3rem; 
+
+    /* place white rim around image */
+    padding: .31rem;
+
+    /* not totally necessary, just for clarity
+        ensures image is on top of background 
+    */
+    z-index: 1;
+    margin-bottom: 1.5rem;
+}
+
+.card__bioFlexContainer {
+    flex: 1 0 auto;
+    text-align: center;
+}
+
+.card__bioName {
+    display: inline-block;
+    color: #2E3349;
+    font-family: Kumbh Sans;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0 .53rem .81rem 0;
+
+}
+
+.card__bioAge {
+    color: #6B7082;
+    font-family: Kumbh Sans;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.card__bioLocation {
+    color: #6B7082;
+    font-family: Kumbh Sans;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.card__statsFlexContainer {
+    display: flex;
+    align-items: center;
+    height: 0.0625rem;
+    flex-shrink: 0;
+    border-top:  1px solid #E8E9EC;
+    height: 5.5rem;
+}
+
+.stat {
+    color: #2E3349;
+    font-family: Kumbh Sans;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.stat-description {
+    color: #6B7082;
+    font-family: Kumbh Sans;
+    font-size: 0.625rem;
+    font-weight: 400;
+    letter-spacing: 0.09375rem;
+}
+
+.card__statsFollowers,
+.card__statsLikes,
+.card__statsPhotos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card__statsFollowers {
+    margin-left: 2.94rem;
+    margin-right: 2.88rem;
+}
+
+.card__statsLikes {
+    margin-right: 3.38rem;
+}
+
+.attribution {
+    font-size: .8rem;
+    text-align: center;
+    background-color: var(--dark-cyan);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.name {
+    font-family: "la belle aurore";
+    font-size: 1rem;
+}
