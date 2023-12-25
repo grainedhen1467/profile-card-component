@@ -24,19 +24,22 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--dark-cyan);
-    background-image: url("images/bg-pattern-bottom.svg"),
-    url("images/bg-pattern-top.svg");
-    background-position: bottom 200% left 154%, top 155% right 170%;
+    background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+    background-position: left -60% bottom -800%, right -50% top -950%;
     background-repeat: no-repeat;
 }
 
-.main__flexContainer {
-    background-color: var(--dark-cyan);
-    background-image: url("images/bg-pattern-bottom.svg"),
-    url("images/bg-pattern-top.svg");
-    background-position: left -25% top -80%, right -30% top 190%;
-    background-repeat: no-repeat;
+@media (max-width: 23.4375rem) {
+    .main__flexContainer {
+        background-color: var(--dark-cyan);
+        background-image: url("images/bg-pattern-top.svg"),
+        url("images/bg-pattern-bottom.svg");
+        background-position: bottom -120% left 130%, top -120% right 125%;
+        background-repeat: no-repeat;
+    }
 }
+
 
 .card {
     display: flex;
@@ -54,6 +57,7 @@ body {
     .card {
         width: 20.375rem;
         height: 23.375rem;
+        background-color: red;
     }
     
 }
